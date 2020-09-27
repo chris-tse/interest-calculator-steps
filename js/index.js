@@ -1,16 +1,18 @@
 const slider = document.querySelector('#initial-amount')
 const sliderDisplay = document.querySelector('#initial-amount-display .amount')
 
+const { format } = new Intl.NumberFormat('en-US')
+
 // Initial startup
-sliderDisplay.innerHTML = slider.value
+sliderDisplay.innerHTML = format(slider.value)
 
 // Event Listeners
-slider.addEventListener('change', handleSlide)
+slider.addEventListener('input', handleSlide)
 
 /**
  * Event handler for when slider changes
  * @param {Event} event
  */
 function handleSlide(event) {
-	sliderDisplay.innerHTML = event.target.value
+	sliderDisplay.innerHTML = format(event.target.value)
 }
