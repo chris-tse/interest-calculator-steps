@@ -26,3 +26,36 @@ section.fields {
 		flex-direction: column;
 	}
 }
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 2rem 2rem 0;
+}
+
+.input-group label {
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+	color: var(--text-secondary-darker);
+}
+
+.range-labels {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.8rem;
+	color: var(--text-secondary-darker);
+}
+
+.row {
+	display: flex;
+}
+
+.compound-selector {
+	border: 0;
+}
+
+.compound-selector legend {
+	font-size: 0.9rem;
+	padding: 1rem 0 0;
+	color: var(--text-secondary-darker);
+}
