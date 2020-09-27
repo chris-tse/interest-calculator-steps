@@ -3,34 +3,42 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 		<title>Super Duper Interest Calculator</title>
 	</head>
 	<body>
 		<h1>Super Duper Interest Calculator</h1>
+		<p>Let's see how much your savings account will have after some time with compound interest</p>
 
-		<label for="initial-amount">Initial amount</label>
-		<input type="number" id="initial-amount" />
+		<main>
+			<section class="fields">
+				<label for="initial-amount">Initial amount</label>
+				<input type="number" id="initial-amount" />
 
-		<label for="interest-rate">Interest rate (APY): %</label>
-		<input type="number" id="interest-rate" />
+				<label for="interest-rate">Interest rate (APY): %</label>
+				<input type="number" id="interest-rate" />
 
-		<label for="years">For how long (years)</label>
-		<input type="number" id="years" />
+				<label for="years">For how long (years)</label>
+				<input type="number" id="years" />
 
-		<fieldset>
-			<legend>Compounding Period</legend>
-			<label>
-				<input type="radio" name="period" id="monthly" value="monthly" checked />
-				Monthly
-			</label>
-			<label>
-				<input type="radio" name="period" id="yearly" value="yearly" />
-				Yearly
-			</label>
-		</fieldset>
+				<fieldset>
+					<legend>Compounding Period</legend>
+					<label>
+						<input type="radio" name="period" id="monthly" value="monthly" checked />
+						Monthly
+					</label>
+					<label>
+						<input type="radio" name="period" id="yearly" value="yearly" />
+						Yearly
+					</label>
+				</fieldset>
+			</section>
+			<section class="result">
+				<p>After 1 year, you will have $50,000</p>
 
-		<p>After 1 year, you will have $50,000</p>
-
-		<button>Calculate</button>
+				<button>Calculate</button>
+			</section>
+		</main>
 	</body>
 </html>
