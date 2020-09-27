@@ -6,6 +6,31 @@
 		<title>Super Duper Interest Calculator</title>
 	</head>
 	<body>
-		<h1>Amazing!</h1>
+		<h1>Super Duper Interest Calculator</h1>
+
+		<label for="initial-amount">Initial amount</label>
+		<input type="number" id="initial-amount" />
+
+		<label for="interest-rate">Interest rate (APY): %</label>
+		<input type="number" id="interest-rate" />
+
+		<label for="years">For how long (years)</label>
+		<input type="number" id="years" />
+
+		<fieldset>
+			<legend>Compounding Period</legend>
+			<label>
+				<input type="radio" name="period" id="monthly" value="monthly" checked />
+				Monthly
+			</label>
+			<label>
+				<input type="radio" name="period" id="yearly" value="yearly" />
+				Yearly
+			</label>
+		</fieldset>
+
+		<p>After 1 year, you will have $50,000</p>
+
+		<button>Calculate</button>
 	</body>
 </html>
