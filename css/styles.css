@@ -80,3 +80,48 @@ section.fields {
 	padding: 1rem 0 0;
 	color: var(--text-secondary-darker);
 }
+
+.result {
+	flex: 1;
+	align-self: baseline;
+	background: white;
+	color: var(--text-result);
+	align-self: baseline;
+	border-radius: 5px;
+	margin: 3rem 0 0 1rem;
+	padding: 3rem 4rem;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.result p {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+#final-amount {
+	display: flex;
+	margin: 1.5rem 0 -2rem 0;
+	font-size: 4.5rem;
+	font-weight: bold;
+}
+
+#final-amount .dollar-sign {
+	font-size: 0.3em;
+	margin-top: 0.6rem;
+}
+
+.calculate-button {
+	background: #e80000;
+	color: white;
+	border: 0;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	font-size: 1.2rem;
+	box-shadow: 0 20px 25px -5px rgba(223, 21, 21, 0.37), 0 10px 10px -5px rgba(220, 21, 21, 0.64);
+	cursor: pointer;
+	transform: translateY(75px);
+}
+
+.calculate-button:hover {
+	background: #be0000;
+}
